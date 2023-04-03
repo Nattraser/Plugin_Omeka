@@ -1,0 +1,30 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.2.3/jspdf.plugin.autotable.js"></script>
+<script src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+
+	
+<div>
+	<div id="QRCodePopUp" class="background-popup">
+		<div class="popup">
+			<button class="close-button" onclick="popUpClose('QRCodePopUp')"></button>
+			<div id="QRCodeImg"></div>
+			<button class="action-button download-button" onclick="downloadQRCode()">Télécharger</button>
+		</div>
+	</div>
+	<div  id="LinkPopUp" class="background-popup">
+		<div class="popup">
+			<button class="close-button" onclick="popUpClose('LinkPopUp')"></button>
+			<span id="link"></span>
+			<button class="action-button" onclick="copy()">Copier</button>
+		</div>
+	</div>
+	<div  id="PDFPopUp" class="background-popup">
+		<div class="popup">
+			<button class="close-button" onclick="popUpClose('PDFPopUp')"></button>
+			<p> Cliquer sur imprimer afin de visualiser le PDF </p>
+			<button class="download-button action-button" onclick="printPDF()">Imprimer</button>
+			<button class="download-button action-button" onclick="downloadPDF()">Télécharger</button>
+		</div>
+	</div>
+
+</div>
